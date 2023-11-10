@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Park +</title>
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/template.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- Navbar fixada no topo, com click-scroll -->
+        <nav class="navbar navbar-expand-lg  fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    Park +
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                 <!-- Click scroll indo da section 1 ate a 4 (cada topico é uma section, sendo a Home section_1 e Contato section_4) -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">Missão</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">Download do Aplicativo</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">Contato</a>
+                        </li>
+                    </ul>
+
+                     <!--Botoes simples na navbar para login e cadastro -->
+                    <a href="login.html" class="btn custom-btn d-lg-block d-none">Login</a>
+                    <a href="cadastro.html" class="btn custom-btn d-lg-block d-none">Cadastro</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sobrepor o video do drone e colocar o nome do site -->
+        <section class="hero-section" id="section_1">
+            <div class="section-overlay"></div>
+
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row">
+
+                    <div class="col-12 mt-auto mb-5 text-center">
+                        <h1 class="text-white mb-5">Park +</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video e mensagem de erro caso o navegador nao suporte executa-lo -->
+            <div class="video-wrap">
+                <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                    <source src="video/drone-carros-estacionados.mp4" type="video/mp4">
+
+                    Seu navegador nao suporta o video.
+                </video>
+            </div>
+        </section>
+
+        <!-- section_2 - Missão -->
+        <section class="contact-section section-padding" id="section_2">
+            <div class="container">
+                <div class="row">
+
+                     <!-- Textos -->
+                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                        <div class="services-info">
+                            <h2 class="text-black mb-4">Missão</h2>
+
+                            <p class="text-black">Facilitar a vida de motoristas.</p>
+
+                            <h6 class="text-black mt-4">Pague estacionamento de qualquer lugar em qualquer lugar</h6>
+
+                            <p class="text-black">Com diversas parcerias, você pode pagar estacionamentos em todo o Brasil.</p>
+
+                            <h6 class="text-black mt-4">Dê adeus a parquímetros e tags</h6>
+
+                            <p class="text-black">Pague facilmente pelo nosso aplicativo ou site.</p>
+                        </div>
+                    </div>
+
+                    <!-- Foto carro estacionado -->
+                    <div class="col-lg-6 col-12">
+                        <div class="missao-text-wrap">
+                            <img src="images/carro-estacionado.png" class="missao-image img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Section_3 - Download do Aplicativo, texto centralizado na tela-->
+        <section class="app-section section-padding" id="section_3">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-12 text-center">
+                        <h2 class="mb-4">Download do aplicativo</h1>
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                        
+                        <!-- Link que aponta para o site da  Google play ao clicar na foto-->
+                            <a href = 'https://www.apple.com/br/app-store/'>
+
+                                 <!-- Foto App Store, centralizado na tela -->
+                                <img src="images/disponivel-na-app-store-botao-2.png"
+                                    class="artists-image img-fluid">
+                                </a>
+                     
+                        <!-- Link que aponta para o site da  Google play ao clicar na foto-->
+                            <a href = 'https://play.google.com/'>
+
+                            <!-- Foto Google play, centralizado na tela -->
+                            <img src="images/disponivel-google-play-badge-1.png"
+                                class="artists-image img-fluid">
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section_4 - Contato-->
+        <section class="contact-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Texto centralizado -->
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <h2 class="text-center mb-4">Fale Conosco !</h2>
+
+
+                         <!-- Switch entre mensagem(forms) e google maps-->
+                        <nav class="d-flex justify-content-center">
+                            <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab"
+                                role="tablist">
+                                <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-ContactForm" type="button" role="tab"
+                                    aria-controls="nav-ContactForm" aria-selected="false">
+                                    <h5>Mensagem</h5>
+                                </button>
+
+                                <button class="nav-link" id="nav-ContactMap-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-ContactMap" type="button" role="tab"
+                                    aria-controls="nav-ContactMap" aria-selected="false">
+                                    <h5>Google Maps</h5>
+                                </button>
+                            </div>
+                        </nav>
+
+                         <!-- Forms contendo campos de nome, email, mensagem e botao de enviar -->
+                        <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel"
+                                aria-labelledby="nav-ContactForm-tab">
+                                <form class="custom-form contact-form mb-5 mb-lg-0" action="#" method="post"
+                                    role="form">
+                                    <div class="contact-form-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <input type="text" name="contact-name" id="contact-name"
+                                                    class="form-control" placeholder="Nome Completo" required oninvalid="this.setCustomValidity('Campo requerido')" 
+                                                    onchange="try{setCustomValidity('')}catch(e){}">
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <input type="email" name="contact-email" id="contact-email"
+                                                    pattern="[^ @]*@[^ @]*" class="form-control"
+                                                    placeholder="Email" required oninvalid="this.setCustomValidity('Campo requerido')" 
+                                                    onchange="try{setCustomValidity('')}catch(e){}">
+                                            </div>
+                                        </div>
+
+                                       
+                                        <textarea name="contact-message" rows="3" class="form-control"
+                                            id="contact-message" placeholder="Mensagem"></textarea>
+
+                                        <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                            <button type="submit" class="form-control">Enviar Mensagem</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Google maps-->
+                            <div class="tab-pane fade" id="nav-ContactMap" role="tabpanel"
+                                aria-labelledby="nav-ContactMap-tab">
+                                <iframe class="google-map"
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14633.107485835559!2d-46.7582018!3d-23.5225422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff250e441ef9%3A0x88dae4d491bc1ac7!2sFATEC%20Osasco!5e0!3m2!1sen!2sbr!4v1699634669059!5m2!1sen!2sbr"
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer com o nome do site e icones para rede sociais -->
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white mb-lg-0">Park +</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                        <ul class="social-icon d-flex justify-content-lg-end">
+                            <li class="social-icon-item">
+                                <a href="https://twitter.com/home" class="social-icon-link">
+                                    <span class="bi-twitter"></span>
+                                </a>
+                            </li>
+
+
+                            <li class="social-icon-item">
+                                <a href="https://www.instagram.com/" class="social-icon-link">
+                                    <span class="bi-instagram"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.youtube.com/" class="social-icon-link">
+                                    <span class="bi-youtube"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <!-- Footer contendo os links, telefone, email e localizacao -->
+                <div class="col-lg-6 col-12 mb-4 pb-2">
+                    <h5 class="site-footer-title mb-3">Links</h5>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#section_1" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#section_2" class="site-footer-link">Missão</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#section_3" class="site-footer-link">Download do Aplicativo</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#section_4" class="site-footer-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <h5 class="site-footer-title mb-3">Prefere nos ligar?</h5>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 111234-5678" class="site-footer-link">
+                            (11) 1234-5678
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:parkplus@parkplus.com" class="site-footer-link">
+                            parkplus@parkplus.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                    <h5 class="site-footer-title mb-3">Localização</h5>
+
+                    <p class="text-white d-flex mt-3 mb-2">
+                        Faculdade de Tecnologia Prefeito Hirant Sanazar
+                    (FATEC Osasco)</p>
+
+                
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright centralizado -->
+        <div class="site-footer-bottom">
+    
+                    <div class="text-center">
+                        <p class="copyright-text">Copyright © 2023 Park +</p>
+                
+                    </div>
+
+        </div>
+    </footer>
+
+  
+
+    <!-- JAVASCRIPT  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

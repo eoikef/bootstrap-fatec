@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Park +</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/template.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <body>
+        <main>
+            <!-- Navbar fixada no topo, com click-scroll -->
+            <nav class="navbar navbar-expand-lg  fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        Park +
+                    </a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- Click scroll voltando pra home na section que for escolhida) -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_1">Home</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_2">Missão</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_3">Download do Aplicativo</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_4">Contato</a>
+                            </li>
+                        </ul>
+
+                         <!--Botoes simples na navbar para login e cadastro -->
+                        <a href="login.html" class="btn custom-btn d-lg-block d-none">Login</a>
+                        <a href="cadastro.html" class="btn custom-btn d-lg-block d-none">Cadastro</a>
+                    </div>
+                </div>
+            </nav>
+    
+            <!-- Sobrepor o video do drone e forms de cadastro  -->
+            <section class="hero-section" id="cadastro_1">
+                
+                <div class="section-overlay"></div>
+    
+                <div class="container justify-content-center align-items-center">
+                    <div class="row">
+                      
+                            
+                
+                            <div class="container">
+                                <div class="row">
+                
+                                    <div class="mx-auto">
+                                        <form class="custom-form cadastro-form mb-5 mb-lg-0" action="#" method="post" role="form">
+                                            <h2 class="text-center mb-4">Cadastro</h2>
+
+                                            <form id="cadastrar" onsubmit="return validarCadastro()">
+                
+                                            <div class="cadastro-form-body">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-12">
+                                                        <input type="text" name="cadastro-form-name" id="cadastro-form-name"
+                                                            class="form-control" placeholder="Nome Completo" required oninvalid="this.setCustomValidity('Campo requerido')" 
+                                                            onchange="try{setCustomValidity('')}catch(e){}">
+                                                    </div>
+                
+                                                    <div class="col-lg-6 col-md-6 col-12">
+                                                        <input type="email" class="form-control" id="cadastro-email" placeholder="Email" required oninvalid="this.setCustomValidity('Campo requerido')" 
+                                onchange="try{setCustomValidity('')}catch(e){}">
+                                                    </div>
+                                                
+
+                                                <div class="col-lg-6 col-md-6 col-12">
+                                                    <input type="tel" class="form-control" id="cadastro-celular" placeholder="Celular" required oninvalid="this.setCustomValidity('Campo requerido')" 
+                            onchange="try{setCustomValidity('')}catch(e){}">
+                                                </div>
+
+
+                                                <div class="col-lg-6 col-md-6 col-12">
+                                                    <input type="password" class="form-control" id="cadastro-senha" placeholder="Senha" required oninvalid="this.setCustomValidity('Campo requerido')" 
+                            onchange="try{setCustomValidity('')}catch(e){}">
+                                                </div>
+                                            </div>
+
+
+                                           
+                
+                                                <h6>Informações do Carro</h6>
+                
+                                               
+                                                <input type="text" name="marca-carro" id="marca-carro"
+                                                    class="form-control" placeholder="Marca" required oninvalid="this.setCustomValidity('Campo requerido')" 
+                                                    onchange="try{setCustomValidity('')}catch(e){}">
+
+                                                    <input type="text" name="modelo-carro" id="modelo-carro"
+                                                    class="form-control" placeholder="Modelo" required oninvalid="this.setCustomValidity('Campo requerido')" 
+                                                    onchange="try{setCustomValidity('')}catch(e){}">
+
+                                                    <input type="text" name="placa-carro-principal" id="placa-carro-principal"
+                                                    class="form-control" placeholder="Placa formato AAA1A23 ou ABC-1234" required oninvalid="this.setCustomValidity('Campo requerido')" 
+                                                    onchange="try{setCustomValidity('')}catch(e){}">
+                
+                
+                                                <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                                    <button type="submit" class="form-control">Cadastrar</button>
+                                                    <p class="text-center mt-3">Já tem uma conta? <a href="login.html">Faça o login</a></p>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                        </section>
+                    </div>
+                </div>
+    
+                <!-- Video e mensagem de erro -->
+                <div class="video-wrap">
+                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                        <source src="video/video 2.mp4" type="video/mp4">
+    
+                        Seu navegador nao suporta o video.
+                    </video>
+                </div>
+            </section>
+
+
+       
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer com o nome do site e icones para rede sociais -->     
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white mb-lg-0">Park +</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                        <ul class="social-icon d-flex justify-content-lg-end">
+                            <li class="social-icon-item">
+                                <a href="https://twitter.com/home" class="social-icon-link">
+                                    <span class="bi-twitter"></span>
+                                </a>
+                            </li>
+
+
+                            <li class="social-icon-item">
+                                <a href="https://www.instagram.com/" class="social-icon-link">
+                                    <span class="bi-instagram"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.youtube.com/" class="social-icon-link">
+                                    <span class="bi-youtube"></span>
+                                </a>
+                            </li>
+
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <!-- Footer contendo os links, telefone, email e localizacao -->
+                <div class="col-lg-6 col-12 mb-4 pb-2">
+                    <h5 class="site-footer-title mb-3">Links</h5>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="index.html#section_1" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="index.html#section_2" class="site-footer-link">Missão</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="index.html#section_3" class="site-footer-link">Download do Aplicativo</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="index.html#section_4" class="site-footer-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <h5 class="site-footer-title mb-3">Prefere nos ligar?</h5>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 111234-5678" class="site-footer-link">
+                            (11) 1234-5678
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:parkplus@parkplus.com" class="site-footer-link">
+                            parkplus@parkplus.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                    <h5 class="site-footer-title mb-3">Localização</h5>
+
+                    <p class="text-white d-flex mt-3 mb-2">
+                        Faculdade de Tecnologia Prefeito Hirant Sanazar
+                    (FATEC Osasco)</p>
+
+                
+                </div>
+            </div>
+        </div>
+
+         <!-- Copyright centralizado -->
+        <div class="site-footer-bottom">
+    
+                    <div class="text-center">
+                        <p class="copyright-text">Copyright © 2023 Park +</p>
+                
+                    </div>
+
+        </div>
+    </footer>
+ <!-- Scripts JS e Bootstrap JS (tentativa de usar o jquery para aplicar a mascara no cel) -->
+ <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/validation.js"></script>
+
+</body>
+
+</html>
