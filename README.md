@@ -11,12 +11,15 @@ Robson Hamilton Carréa Filho
 
 
 Tecnologias utilizadas: 
-HTML5, CSS, JS e Bootstrap
+HTML5, CSS, JS, Bootstrap, Mysql e PHP
 
 Como fazer alteracoes no projeto:
 Baixar o plugin do visual studio code "Live Server" para conseguir hostear o site localmente 
 e ter um feedback em tempo real das alteracoes.
 
+
+Para fazer alteracoes no Banco de dados:
+Coloque suas credenciais no process_form.php e process_login.php
 
 
 Estrutura do projeto:
@@ -29,7 +32,7 @@ images: Imagens do projeto
 js: Todas as lógicas de click-scroll da navbar e jquery. Também possuí as validacoes de formularios de cadastro de conta.
 video: Videos do projeto
 
-As paginas html estao soltas na pasta raiz do projeto.
+As paginas html e o php estao soltas na pasta raiz do projeto.
 
 
 
